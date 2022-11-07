@@ -64,12 +64,12 @@ fun TodoView(vm: TodoViewModel) {
                                             .fillMaxWidth()
                                             .padding(0.dp, 0.dp, 16.dp, 0.dp)
                                     ){
-                                        Text(text = todo.title, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                                        Text(text = todo.name, maxLines = 1, overflow = TextOverflow.Ellipsis)
                                     }
                                     
                                     Spacer(modifier = Modifier.width(16.dp))
                                     
-                                    Checkbox(checked = todo.completed, onCheckedChange = null)
+                                    Checkbox(checked = todo.sold, onCheckedChange = null)
                                 }
                                 
                                 Divider()
