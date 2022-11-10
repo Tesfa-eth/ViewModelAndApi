@@ -118,10 +118,12 @@ fun CardView(itemName: String,
     ) {
 
         Column(
-            modifier = Modifier.padding(15.dp),
+            modifier = Modifier.padding(15.dp)
+                .fillMaxWidth()
+            ,
             //horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Row{
+            Row( modifier = Modifier.fillMaxSize()){
                 OnSaleItemImage()
             }
             Row(

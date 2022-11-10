@@ -68,7 +68,7 @@ fun TodoView(vm: TodoViewModel) {
         },
         content = {
             if (vm.errorMessage.isEmpty()){
-                Column(modifier = Modifier.padding(0.dp)) {
+                Column(modifier = Modifier.padding(0.dp).fillMaxWidth()) {
                     LazyColumn(modifier = Modifier.fillMaxSize()){
                         items (list){ todo ->
                             Column(
