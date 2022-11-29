@@ -1,6 +1,7 @@
 package com.example.viewmodelsandapitutorial
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -50,6 +51,8 @@ fun TodoView(vm: TodoViewModel) {
     LaunchedEffect(key1 = Unit, block = {
         vm.getTodoList()
     })
+
+    Log.d("Todo list", vm.todoList.size.toString())
 
     var list = listOf<Todo>(
         Todo(1, "Item1name", "Tesfa", "good", 4f, true, true, "www.google.com"),
